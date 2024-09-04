@@ -12,6 +12,7 @@
             class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
             header="ADD/REMOVE HOTEL"
             press="onaddHotel"
+            
         >
             <TileContent>
                 <ImageContent src="sap-icon://create-form" />

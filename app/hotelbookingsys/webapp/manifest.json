@@ -122,6 +122,13 @@
           "target": [
             "TargetRouteUserview"
           ]
+        },
+        {
+          "name": "RouteAdminview",
+          "pattern": "adminview",
+          "target": [
+            "TargetRouteAdminview"
+          ]
         }
       ],
       "targets": {
@@ -138,6 +145,13 @@
           "clearControlAggregation": false,
           "viewId": "User",
           "viewName": "User"
+        },
+        "TargetRouteAdminview": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Admin",
+          "viewName": "Admin"
         }
       }
     },

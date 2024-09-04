@@ -13,7 +13,7 @@
             </form:content>
         </form:SimpleForm>
         <beginButton>
-            <Button id="submitsignup" text="Submit" type="Emphasized" press="onSignup"></Button>
+            <Button id="submitsignup" text="Submit" type="Emphasized" press="onsubmitSignup"></Button>
         </beginButton>
         <endButton>
             <Button id="closesignup" text="Close" type="Reject" press="onCloseSignupDialog"></Button>

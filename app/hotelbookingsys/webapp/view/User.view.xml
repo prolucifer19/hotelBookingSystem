@@ -1,0 +1,30 @@
+<mvc:View
+    controllerName="hotelbooking.hotelbookingsys.controller.User"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="USER VIEW"
+    >
+        <GenericTile
+            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+            header="BOOK HOTEL"
+            press="onLogin"
+        >
+            <TileContent>
+                <ImageContent src="sap-icon://create-form" />
+            </TileContent>
+        </GenericTile>
+        <GenericTile
+            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+            header="USER HISTORY"
+            press="onSignup"
+        >
+            <TileContent>
+                <ImageContent src="sap-icon://person-placeholder" />
+            </TileContent>
+        </GenericTile>
+    </Page>
+</mvc:View>

@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns:form="sap.ui.layout.form"
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core">
+   <Dialog id="onLogin" title="Log In">
+        <form:SimpleForm >
+            <form:content>
+                <Label  text="Username"></Label>
+                <Input id="ipUsername" value=""></Input>
+                <Label  text="Password"></Label>
+                <Input id="ipPassword" value=""></Input>
+            </form:content>
+        </form:SimpleForm>
+        <beginButton>
+            <Button id="submitLogin" text="Submit" type="Emphasized" press="onSubmitlogin"></Button>
+        </beginButton>
+        <endButton>
+            <Button id="closeLogin" text="Close" type="Reject" press="onCloseLoginDialog"></Button>
+        </endButton>
+   </Dialog>
+</core:FragmentDefinition>

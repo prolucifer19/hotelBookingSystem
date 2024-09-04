@@ -1,0 +1,30 @@
+<mvc:View
+    controllerName="hotelbooking.hotelbookingsys.controller.Admin"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="ADMIN PAGE"
+    >
+        <GenericTile
+            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+            header="ADD/REMOVE HOTEL"
+            press="onaddHotel"
+        >
+            <TileContent>
+                <ImageContent src="sap-icon://create-form" />
+            </TileContent>
+        </GenericTile>
+        <GenericTile
+            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+            header="USER INFORMATION"
+            press="onuserInfo"
+        >
+            <TileContent>
+                <ImageContent src="sap-icon://person-placeholder" />
+            </TileContent>
+        </GenericTile>
+    </Page>
+</mvc:View>

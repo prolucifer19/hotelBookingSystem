@@ -1,0 +1,22 @@
+<core:FragmentDefinition xmlns:form="sap.ui.layout.form"
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core">
+   <Dialog id="onSignup" title="Sign UP">
+        <form:SimpleForm >
+            <form:content>
+                <Label  text="Username"></Label>
+                <Input id="inputusername" value=""></Input>
+                <Label text="Email"></Label>
+                <Input id="ipEmail" value=""></Input>
+                <Label  text="Password"></Label>
+                <Input id="inputPassword" value=""></Input>
+            </form:content>
+        </form:SimpleForm>
+        <beginButton>
+            <Button id="submitsignup" text="Submit" type="Emphasized" press="onSignup"></Button>
+        </beginButton>
+        <endButton>
+            <Button id="closesignup" text="Close" type="Reject" press="onCloseSignupDialog"></Button>
+        </endButton>
+   </Dialog>
+</core:FragmentDefinition>

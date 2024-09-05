@@ -1,0 +1,51 @@
+<mvc:View controllerName="hotelbooking.hotelbookingsys.controller.Admin"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <FlexBox justifyContent="End" >
+        <Button text="Add" class="sapUiTinyMargin" press="onpressadd" icon="sap-icon://add"></Button>
+        <Button text="Update" class="sapUiTinyMargin" press="onpressupdate" icon="sap-icon://add-activity"></Button>
+        <Button text="Remove" class="sapUiTinyMargin" press="onpressdelete" icon="sap-icon://delete">
+        </Button>
+    </FlexBox>
+    <Table id="HotelTable" items="{/HotelBooking}" mode="SingleSelectLeft">
+        <columns>
+            <Column >
+                <Label text="HOTEL ID"></Label>
+            </Column>
+            <Column >
+                <Label text="NAME"></Label>
+            </Column>
+            <Column >
+                <Label text="LOCATION"></Label>
+            </Column>
+            <Column >
+                <Label text="ROOMS AVAILABLE"></Label>
+            </Column>
+            <Column >
+                <Label text="DESCRIPTION"></Label>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem >
+                <cells>
+                    <Text text= "{ID}"></Text>
+                </cells>
+                <cells>
+                    <Text text= "{Name}"></Text>
+                </cells>
+                <cells>
+                    <Text text= "{Location}"></Text>
+                </cells>
+                <cells>
+                    <Text text= "{AvailableRooms}"></Text>
+                </cells>
+                <cells>
+                    <Text text= "{Description}"></Text>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+        <content />
+    </Page>
+</mvc:View>

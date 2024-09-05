@@ -14,7 +14,7 @@
             press="onLogin"
         >
             <TileContent>
-                <ImageContent src="sap-icon://create-form" />
+                <ImageContent src="sap-icon://log" />
             </TileContent>
         </GenericTile>
         <GenericTile
@@ -23,7 +23,7 @@
             press="onSignup"
         >
             <TileContent>
-                <ImageContent src="sap-icon://person-placeholder" />
+                <ImageContent src="sap-icon://add-employee" />
             </TileContent>
         </GenericTile>
     </Page>

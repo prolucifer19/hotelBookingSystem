@@ -19,6 +19,35 @@ function (Controller, JSONModel, Fragment, Dialog, MessageToast) {
                 this.getView().addDependent(this._oLoginDialogItem); // Add dependent to the view
             }
             this._oLoginDialogItem.open();
+            
+        },
+        onShowPasswordToggle: function (oEvent) {
+            // Get the state of the checkbox
+            var bSelected = oEvent.getParameter("selected");
+
+            // Get the password input field from the fragment using sap.ui.getCore().byId
+            var oPasswordInput = sap.ui.getCore().byId("ipPassword");
+
+            // Toggle the password visibility
+            if (bSelected) {
+                oPasswordInput.setType("Text");
+            } else {
+                oPasswordInput.setType("Password");
+            }
+        },
+        onShowPasswordTogglesu: function (oEvent) {
+            // Get the state of the checkbox
+            var bSelected = oEvent.getParameter("selected");
+
+            // Get the password input field from the fragment using sap.ui.getCore().byId
+            var oPasswordInput = sap.ui.getCore().byId("inputPassword");
+
+            // Toggle the password visibility
+            if (bSelected) {
+                oPasswordInput.setType("Text");
+            } else {
+                oPasswordInput.setType("Password");
+            }
         },
 
         onCloseLoginDialog: function() {
@@ -42,7 +71,7 @@ function (Controller, JSONModel, Fragment, Dialog, MessageToast) {
                 return;
             }
             else{
-            MessageToast.show("User Registered Successfully");
+            MessageToast.show("User Registered Successfully!Please Log In!");
             this._oSignupDialogItem.close();
             }
         },
@@ -67,6 +96,8 @@ function (Controller, JSONModel, Fragment, Dialog, MessageToast) {
             // Hardcoded admin credentials
             var sAdminUsername = "admin";
             var sAdminPassword = "admin";
+            var sUserUsername = "user";
+            var sUserPassword = "user";
 
             // Check credentials
             if (sUsername === sAdminUsername && sPassword === sAdminPassword) {
@@ -74,9 +105,26 @@ function (Controller, JSONModel, Fragment, Dialog, MessageToast) {
                 this.onCloseLoginDialog(); // Close the dialog after successful login
                 this.getOwnerComponent().getRouter().navTo("RouteAdminview");
                 //this.getOwnerComponent().getRouter().navTo("RouteUserview"); // Navigate to user view
-            } else {
+            } 
+            else if(sUsername === sUserUsername && sPassword === sUserPassword){
+                MessageToast.show("Login successful!");
+                this.onCloseLoginDialog(); // Close the dialog after successful login
+                //this.getOwnerComponent().getRouter().navTo("RouteAdminview");
+                this.getOwnerComponent().getRouter().navTo("RouteUserview"); 
+            }
+            else {
                 MessageToast.show("Invalid username or password.");
             }
-        }
+        },
+
     });
 });
+
+
+
+
+
+
+
+
+

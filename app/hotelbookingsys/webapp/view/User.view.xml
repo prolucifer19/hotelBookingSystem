@@ -11,19 +11,19 @@
         <GenericTile
             class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
             header="BOOK HOTEL"
-            press="onLogin"
+            press="onBookHotel"
         >
             <TileContent>
-                <ImageContent src="sap-icon://create-form" />
+                <ImageContent src="sap-icon://add-coursebook" />
             </TileContent>
         </GenericTile>
         <GenericTile
             class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
-            header="USER HISTORY"
-            press="onSignup"
+            header="BOOKING HISTORY"
+            press="onBookingHistory"
         >
             <TileContent>
-                <ImageContent src="sap-icon://person-placeholder" />
+                <ImageContent src="sap-icon://customer-history" />
             </TileContent>
         </GenericTile>
     </Page>

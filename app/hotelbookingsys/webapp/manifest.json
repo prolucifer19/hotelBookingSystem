@@ -129,6 +129,34 @@
           "target": [
             "TargetRouteAdminview"
           ]
+        },
+        {
+          "name": "RouteAddHotelview",
+          "pattern": "addhotelview",
+          "target": [
+            "TargetRouteAddHotelview"
+          ]
+        },
+        {
+          "name": "RouteUserInfoview",
+          "pattern": "userinfoview",
+          "target": [
+            "TargetRouteUserInfoview"
+          ]
+        },
+        {
+          "name": "RouteBookHotelview",
+          "pattern": "bookhotelview",
+          "target": [
+            "TargetRouteBookHotelview"
+          ]
+        },
+        {
+          "name": "RouteBookingHistoryview",
+          "pattern": "bookinghistoryview",
+          "target": [
+            "TargetRouteBookingHistoryview"
+          ]
         }
       ],
       "targets": {
@@ -152,6 +180,34 @@
           "clearControlAggregation": false,
           "viewId": "Admin",
           "viewName": "Admin"
+        },
+        "TargetRouteAddHotelview": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "AddHotel",
+          "viewName": "AddHotel"
+        },
+        "TargetRouteUserInfoview": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "UserInfo",
+          "viewName": "UserInfo"
+        },
+        "TargetRouteBookHotelview": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "BookHotel",
+          "viewName": "BookHotel"
+        },
+        "TargetRouteBookingHistoryview": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "BookingHistory",
+          "viewName": "BookingHistory"
         }
       }
     },

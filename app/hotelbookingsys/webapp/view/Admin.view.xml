@@ -11,20 +11,20 @@
         <GenericTile
             class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
             header="ADD/REMOVE HOTEL"
-            press="onaddHotel"
-            
+            press="onAddHotel"
         >
-            <TileContent>
-                <ImageContent src="sap-icon://create-form" />
+         <TileContent>
+                <ImageContent src="https://static.vecteezy.com/system/resources/thumbnails/000/627/396/small/illust58-5847-01.jpg" />
             </TileContent>
         </GenericTile>
         <GenericTile
             class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
             header="USER INFORMATION"
-            press="onuserInfo"
+            press="onUserInfo"
+            backgroundImage=""
         >
             <TileContent>
-                <ImageContent src="sap-icon://person-placeholder" />
+                <ImageContent src="https://st2.depositphotos.com/4520249/7106/v/450/depositphotos_71066225-stock-illustration-people.jpg" />
             </TileContent>
         </GenericTile>
     </Page>

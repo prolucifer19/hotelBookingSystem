@@ -7,7 +7,10 @@
                 <Label  text="Username"></Label>
                 <Input id="ipUsername" value=""></Input>
                 <Label  text="Password"></Label>
-                <Input id="ipPassword" value=""></Input>
+                <Input id="ipPassword" type="Password" value="" showValueStateMessage="true"></Input>
+                <HBox>
+            <CheckBox id="showPasswordCheckBox" text="Show Password" select=".onShowPasswordToggle" />
+        </HBox>
             </form:content>
         </form:SimpleForm>
         <beginButton>

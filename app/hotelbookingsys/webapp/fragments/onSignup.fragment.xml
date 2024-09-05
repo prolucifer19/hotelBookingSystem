@@ -9,7 +9,10 @@
                 <Label text="Email"></Label>
                 <Input id="ipEmail" value=""></Input>
                 <Label  text="Password"></Label>
-                <Input id="inputPassword" value=""></Input>
+                <Input id="inputPassword" type="Password" showValueStateMessage="true" value=""></Input>
+                <HBox>
+                <CheckBox id="showPasswordCheckBoxsignup" text="Show Password" select=".onShowPasswordTogglesu" />
+        </HBox>
             </form:content>
         </form:SimpleForm>
         <beginButton>
